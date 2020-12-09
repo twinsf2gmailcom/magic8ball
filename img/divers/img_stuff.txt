@@ -1,0 +1,121 @@
+    <div class="row d-flex justify-content-center align-items-center">  <!--  -------------------------------------------------------------------- -->
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/g0048430_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="After deployment divers attached a white cable to the upper arm">
+          <img src="img/divers/g0048430_tn.jpg" class="img-fluid">
+          <p>g0048430</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/gopro_mf2_gopr0814_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Diver boat at the site">
+          <img src="img/divers/gopro_mf2_gopr0814_tn.jpg" class="img-fluid">
+          <p>gopro_mf2_gopr0814</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby surface_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Diver assisting to recover the buoy">
+          <img src="img/divers/moby surface_tn.jpg" class="img-fluid">
+          <p>moby surface</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby-l286_bot_before_02_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="A silver gershin tube on the bottom arm.  The buoy is deployed with out these attached.  The divers must attach them after deployment.  They also remove them before retrieval of the old buoy and during monthly cleanings.">
+          <img src="img/divers/moby-l286_bot_before_02_tn.jpg" class="img-fluid">
+          <p>moby-l286_bot_before_02</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby-l286_bot_diver_01_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Diver getting ready to install tube on bottom arm">
+          <img src="img/divers/moby-l286_bot_diver_01_tn.jpg" class="img-fluid">
+          <p>moby-l286_bot_diver_01</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby-l286_bot_diver_02_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Diver installing the gershin tube">
+          <img src="img/divers/moby-l286_bot_diver_02_tn.jpg" class="img-fluid">
+          <p>moby-l286_bot_diver_02</p>
+        </a>
+      </div>
+    </div>   <!--  end row -->
+    <div class="row"><!--  -------------------------------------------------------------------- -->
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby-l286_mid_diver_01_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Diver cleaning the Ed and Lu sensors">
+          <img src="img/divers/moby-l286_mid_diver_01_tn.jpg" class="img-fluid">
+          <p>moby-l286_mid_diver_01</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby-l295_toped_berfore_04_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Top arm before cleaning, you can see all the barnicles.  Sometimes they grow in the collectors">
+          <img src="img/divers/moby-l295_toped_berfore_04_tn.jpg" class="img-fluid">
+          <p>moby-l295_toped_berfore_04</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby-l295_toplu_after_01_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Top arm gershin tube checking for barnicles.">
+          <img src="img/divers/moby-l295_toplu_after_01_tn.jpg" class="img-fluid">
+          <p>moby-l295_toplu_after_01</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby_l288_04_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Divers connecting or unconnecting the buoy tether from the mooring line (~50 ft)">
+          <img src="img/divers/moby_l288_04_tn.jpg" class="img-fluid">
+          <p>moby_l288_04</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby_l288_09_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Divers connecting or unconnecting the buoy tether from the mooring line (~50 ft)">
+          <img src="img/divers/moby_l288_09_tn.jpg" class="img-fluid">
+          <p>moby_l288_09</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby_l288_10_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Divers connecting or unconnecting the buoy tether from the mooring line (~50 ft)">
+          <img src="img/divers/moby_l288_10_tn.jpg" class="img-fluid">
+          <p>moby_l288_10</p>
+        </a>
+      </div>
+    </div>   <!--  end row -->
+    <div class="row"><!--  -------------------------------------------------------------------- -->
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby_l288_20_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Divers also have to install and remove the bridle at the bottom that holds the mushroom anchor and flooper stoppers.">
+          <img src="img/divers/moby_l288_20_tn.jpg" class="img-fluid">
+          <p>moby_l288_20</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby_l288_21_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="In this case it is being removed. A line from the diver boat is connected.  The divers then release it and to diver boat personel pull it in.">
+          <img src="img/divers/moby_l288_21_tn.jpg" class="img-fluid">
+          <p>moby_l288_21</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby_l288_24_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Divers removing the bridel at the bottom of the buoy">
+          <img src="img/divers/moby_l288_24_tn.jpg" class="img-fluid">
+          <p>moby_l288_24</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby_l288_25_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Divers removing the bridel at the bottom of the buoy">
+          <img src="img/divers/moby_l288_25_tn.jpg" class="img-fluid">
+          <p>moby_l288_25</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby_l288_26_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Divers removing the bridel at the bottom of the buoy">
+          <img src="img/divers/moby_l288_26_tn.jpg" class="img-fluid">
+          <p>moby_l288_26</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/moby_l288_50_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Another photo of divers working on the connection point of the buoy tether to the mooring line">
+          <img src="img/divers/moby_l288_50_tn.jpg" class="img-fluid">
+          <p>moby_l288_50</p>
+        </a>
+      </div>
+    </div>   <!--  end row -->
+    <div class="row"><!--  -------------------------------------------------------------------- -->
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/divers/underwater_moby_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Great under water photo with diver">
+          <img src="img/divers/underwater_moby_tn.jpg" class="img-fluid">
+          <p>underwater_moby</p>
+        </a>
+      </div>

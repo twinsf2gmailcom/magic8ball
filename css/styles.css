@@ -1,0 +1,59 @@
+:root {
+    --body_font1: 40px;
+    --body_font1_color: rgb(255,255,255);
+    --body_font2_color: rgb(238, 234, 22);
+    --main_bg: rgb(0,0,0);
+}
+   
+@font-face {
+    font-family: 'Roboto';                    
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height:  100vh;
+    margin:  0;
+    padding: 0;  
+    font-size: var(--body_font1);
+    background-color: var(--main_bg);
+    min-width: 350px;
+    scroll-behavior: smooth;
+  }
+
+form, label, .submit {
+    font-size: var(--body_font1);
+    color: var(--body_font1_color);
+}
+form {
+    width: 80vw;
+}
+
+.pformat {
+    font-size: var(--body_font1);
+    color: var(--body_font1_color);
+}
+
+.pformat2 {
+    font-size: var(--body_font1);
+    color: var(--body_font2_color);
+}
+
+
+.submit {
+    background-color: var(--main_bg);
+}
+
+.hidden {
+    display: none;
+}
+
+.question {
+    size: 50;
+
+}
+
+.answer {
+
+}
+

@@ -1,0 +1,101 @@
+    <div class="row d-flex justify-content-center align-items-center">  <!--  -------------------------------------------------------------------- -->
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/01_moby_pre_launch_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Before deploying the buoy many cables and quick relwease lines must be attached and the ratchet staps holding the buoy to the ship must be removed.">
+          <img src="img/deploy/01_moby_pre_launch_tn.jpg" class="img-fluid">
+          <p>01_moby_pre_launch_tn.jpg</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_deploy1_1_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Two ship board cranes are required to deploy MOBY, as well as, a small boat.  Which is used to move the buoy away from the ship once it is in the water.">
+          <img src="img/deploy/moby_deploy1_1_tn.jpg" class="img-fluid">
+          <p>moby_deploy1_1_tn.jpg</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_deploy1_2_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="The crane simultaneously lifts both end of the buoy out of the cradles.  Tag lines are used to stabilize the buoy as it is lowered into the water.">
+          <img src="img/deploy/moby_deploy1_2_tn.jpg" class="img-fluid">
+          <p>moby_deploy1_2_tn.jpg</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_deploy1_3_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="As the buoy nears the water the small boat begins to pull on the top of the buoy. This helps keep the buoy from hitting the cradles as it is lowered into the water.">
+          <img src="img/deploy/moby_deploy1_3_tn.jpg" class="img-fluid">
+          <p>moby_deploy1_3_tn.jpg</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_deploy1_4_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="The small boat pulls more to continue to swing the top of the buoy away from the ship.">
+          <img src="img/deploy/moby_deploy1_4_tn.jpg" class="img-fluid">
+          <p>moby_deploy1_4_tn.jpg</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_deploy1_5_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title=" Once the top is in the water the quick release is pulled so the buoy is no longer attached to the crane and the small boat pulls the buoy away.">
+          <img src="img/deploy/moby_deploy1_5_tn.jpg" class="img-fluid">
+          <p>moby_deploy1_5_tn.jpg</p>
+        </a>
+      </div>
+    </div>   <!--  end row -->
+    <div class="row"><!--  -------------------------------------------------------------------- -->
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_deploy1_6_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="The second crane will be released once the top of the buoy is far enough out.">
+          <img src="img/deploy/moby_deploy1_6_tn.jpg" class="img-fluid">
+          <p>moby_deploy1_6_tn.jpg</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_deploy1_7_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Both cranes are released and the small boat pulls the buoy away from the ship.">
+          <img src="img/deploy/moby_deploy1_7_tn.jpg" class="img-fluid">
+          <p>moby_deploy1_7_tn.jpg</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_deploy1_8_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="As it goes vertical the top is pulled back toward the ship. Long poles are used to keep the buoy away from the side of the ship.">
+          <img src="img/deploy/moby_deploy1_8_tn.jpg" class="img-fluid">
+          <p>moby_deploy1_8_tn.jpg</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_deploy1_9_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="The small boat will eventually get the buoy away from the ship and tow it to the mooring.">
+          <img src="img/deploy/moby_deploy1_9_tn.jpg" class="img-fluid">
+          <p>moby_deploy1_9_tn.jpg</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_retrv1_1_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="The diver connect the buoy to the 2 cranes abd the cranes start pulling the buoy bottom up slowly while the front crane keeps the buoys and arms from hitting the ship">
+          <img src="img/deploy/moby_retrv1_1_tn.jpg" class="img-fluid">
+          <p>moby_retrv1_1_tn.jpg</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_retrv1_2_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="The buoy continues to be pulled up slowly.">
+          <img src="img/deploy/moby_retrv1_2_tn.jpg" class="img-fluid">
+          <p>moby_retrv1_2_tn.jpg</p>
+        </a>
+      </div>
+    </div>   <!--  end row -->
+    <div class="row"><!--  -------------------------------------------------------------------- -->
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_retrv1_3_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="The buoy continues to be pulled up slowly.">
+          <img src="img/deploy/moby_retrv1_3_tn.jpg" class="img-fluid">
+          <p>moby_retrv1_3_tn.jpg</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_retrv1_4_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="The small boat which is still attached to the top and help keep the buoy from swinging and hitting the ship as it is lifted over the cradles">
+          <img src="img/deploy/moby_retrv1_4_tn.jpg" class="img-fluid">
+          <p>moby_retrv1_4_tn.jpg</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_retrv1_5_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Once the cranes have the buoy level they start moving the buoy towards the cradles.">
+          <img src="img/deploy/moby_retrv1_5_tn.jpg" class="img-fluid">
+          <p>moby_retrv1_5_tn.jpg</p>
+        </a>
+      </div>
+      <div class="col-md-2 mt-2  d-flex justify-content-center align-items-center">
+        <a href="img/deploy/moby_retrv1_6_bg.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="The buoy is safely in the cradles.  The crew will put the ratchet straps on to secure the buoy to the ship.">
+          <img src="img/deploy/moby_retrv1_6_tn.jpg" class="img-fluid">
+          <p>moby_retrv1_6_tn.jpg</p>
+        </a>
+      </div>
