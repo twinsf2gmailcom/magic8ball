@@ -17,6 +17,7 @@ var ctx = document.getElementById('myChart');
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
+    borderColor : "#fffff",
     labels: null,
     datasets: [{
         label: 'Random integer',
@@ -24,14 +25,14 @@ var myLineChart = new Chart(ctx, {
     }]
   },
   options: {
-    responsive: true,
-    borderColor: window.chartColors.yellow,
-    borderWidth: 15,
-    defaultFontSize: 30,
-    defaultFontColor: "#fff",
-    borderColor: "rgb(255, 255, 255)",
-    defaultColor: "rgba(255,255,255,1)",
-    fill: false,
+    // responsive: true,
+    // borderColor: window.chartColors.yellow,
+    // borderWidth: 15,
+    // defaultFontSize: 30,
+    // defaultFontColor: "#fff",
+    // borderColor: "rgb(255, 255, 255)",
+    // defaultColor: "rgba(255,255,255,1)",
+    // fill: false,
     title: {
         display: true,
         text: 'Random Number Generated for Answer'
@@ -44,7 +45,10 @@ var myLineChart = new Chart(ctx, {
         xAxes: [{
           display: true,
           ticks: {
-            min: 0
+            min: 0,
+            stepSize : 1,
+            fontColor : "#fff",
+            fontSize : 14            
           }
         }],
         yAxes: [{

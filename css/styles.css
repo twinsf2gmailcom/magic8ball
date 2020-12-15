@@ -116,8 +116,9 @@ form {
 /* Chart  */
   .chart-container {
     position: relative; 
-    height: 20vh; 
-    width: 60vw;
+    /* height: 20vh; 
+    width: 60vw; */
+    background: #fff;
 }
 
 .myChart {
