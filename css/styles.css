@@ -100,9 +100,11 @@ form {
     position: relative;
     text-align: center;
     color: white;
-    width: 600px;
   }
-
+  
+.img8img {
+  min-width: 500px;
+}
   /* Centered text */
 .centered {
     position: absolute;
@@ -116,8 +118,6 @@ form {
 /* Chart  */
   .chart-container {
     position: relative; 
-    /* height: 20vh; 
-    width: 60vw; */
     background: #fff;
 }
 

@@ -1,62 +1,71 @@
 document.getElementById("question").focus();
 document.getElementById("question").select();
 
+var canvas = document.getElementById("myChart");
+var ctx = canvas.getContext('2d');
+var chartType = 'line';
+var myLineChart;
 
-// GRPAHING THE DATA -------------------------------------------------------------------------------------------
-window.chartColors = {
-    red: 'rgb(255, 99, 132)',
-    orange: 'rgb(255, 159, 64)',
-    yellow: 'rgb(255, 205, 86)',
-    green: 'rgb(75, 192, 192)',
-    blue: 'rgb(54, 162, 235)',
-    purple: 'rgb(153, 102, 255)',
-    grey: 'rgb(231,233,237)'
-  };
-  
-var ctx = document.getElementById('myChart');
-// console.log(ctx)
-var myLineChart = new Chart(ctx, {
-  type: 'line',
-  data: {
+// Global Options:
+Chart.defaults.global.defaultFontColor = 'black';
+Chart.defaults.global.defaultFontSize = 16;
+
+let data = {
     borderColor : "#fffff",
     labels: null,
     datasets: [{
         label: 'Random integer',
         data: null,
+        backgroundColor: "rgb(0,0,255)",
+        borderColor: "rgb(0,0,255)",
     }]
-  },
-  options: {
+  };
+
+let  options = {
     responsive: true,
-    // borderColor: window.chartColors.yellow,
-    // borderWidth: 15,
-    // defaultFontSize: 30,
-    // defaultFontColor: "#fff",
-    // borderColor: "rgb(255, 255, 255)",
-    // defaultColor: "rgba(255,255,255,1)",
-    // fill: false,
-    title: {
-        display: true,
-        text: 'Random Number Generated for Answer'
-      },
-      tooltips: {
+    fill: false,
+    tooltips: {
         mode: 'index',
         intersect: true
-      },   
-      scales: {
+    },   
+    scales: {
         xAxes: [{
-          display: true,
-          ticks: {
-            min: 0,
+            display: true,
+            ticks: {
+                min: 0,
+                stepSize : 1,
+                fontColor : "#fff",
+                fontSize : 14,            
+                display: true
+            }
+        }],
+        yAxes: [{
             stepSize : 1,
             fontColor : "#fff",
-            fontSize : 14            
-          }
+            display: true,
+            min: 0,
+            max: 19
         }],
-        yAxes: [{display: true}],
-      }       
-  }
-});
+    },   
+    title: {
+        fontSize: 18,
+        display: true,
+        text: 'Random Number Generated for Answer',
+        position: 'top'
+      }  
+};
 
+// Intialize the chart function--------------------
+function init() {
+  // Chart declaration:
+  myLineChart = new Chart(ctx, {
+    type: chartType,
+    data: data,
+    options: options
+  });
+}
+
+// The add data function--------------------------
 function addData(chart, label, data) {
     chart.data.labels.push(label);
     chart.data.datasets.forEach((dataset) => {
@@ -70,6 +79,7 @@ function addData(chart, label, data) {
 // ------------------------------------------------------------------------------------------------------------
 function ask(event) {
     event.preventDefault();
+     
 
     // Hide the question form and the Ask button 
     const formobj  = document.getElementById('theform');
@@ -95,26 +105,33 @@ function ask(event) {
         const ansdiv  = document.getElementById('ansdiv');
         const m8txt   = document.getElementById('centered');
         m8txt.innerHTML = answer;
-        //console.log(answer)
+        ////console.log(answer)
         // m8txt.classList.add('pformat2');
         m8txt.classList.add('glow2');
         m8txt.style.fontSize = '50px';
     
-        // 
+        // Make the reset buton visible
         const formobj2  = document.getElementById('theform2');
         formobj2.classList.remove('hidden');
     
+        // Get the data from the session storage, add it to the myLineChart data and update
+        //graph.  If there is no data in storage the initialize the graph
         let Glabel = sessionStorage.getItem('chartlabels');
         let Gdata  = sessionStorage.getItem('chartdata');
         if (Gdata) {
+            init();
             myLineChart.data.labels = JSON.parse(Glabel);
             myLineChart.data.datasets[0].data = JSON.parse(Gdata);
+        } else {
+            init();
+            sessionStorage.setItem('chartlabels',JSON.stringify(myLineChart.data.labels));
+            sessionStorage.setItem('chartdata',JSON.stringify(myLineChart.data.datasets[0].data));    
         }
     
         lstr = myLineChart.data.labels;
     
         addData(myLineChart, lstr.length+1, rnum);
-        console.log(myLineChart);
+        //console.log(myLineChart);
     
         sessionStorage.setItem('chartlabels',JSON.stringify(myLineChart.data.labels));
         sessionStorage.setItem('chartdata',JSON.stringify(myLineChart.data.datasets[0].data));
@@ -126,7 +143,9 @@ function ask(event) {
 
 // RESET BUTTON ---------------------------------------------------------------
 function reset(event) {
+    debugger;
     event.preventDefault();
+    console.log('reset1');
     const formobj  = document.getElementById('theform');
     formobj.classList.remove('hidden'); 
     const formobj2  = document.getElementById('theform2');
@@ -134,14 +153,22 @@ function reset(event) {
     const questdiv  = document.getElementById('questdiv');
     questdiv.classList.add('hidden');
 
-    let Glabel = sessionStorage.getItem('chartlabels');
-    let Gdata  = sessionStorage.getItem('chartdata');
-    if (Gdata) {
-        myLineChart.data.labels = JSON.parse(Glabel);
-        myLineChart.data.datasets[0].data = JSON.parse(Gdata);
-    }
-    myLineChart.update();
-    console.log(myLineChart.data.labels)
+    console.log('reset2');
+
+    // Get the data from the session storage, add it to the myLineChart data and update
+    //graph.  If there is no data in storage the initialize the graph
+    // let Glabel = sessionStorage.getItem('chartlabels');
+    // let Gdata  = sessionStorage.getItem('chartdata');
+    // console.log('Reset');
+    // if (Gdata) {
+    //     init();
+    //     myLineChart.data.labels = JSON.parse(Glabel);
+    //     myLineChart.data.datasets[0].data = JSON.parse(Gdata);
+    // } else {
+    //     init();
+    //     sessionStorage.setItem('chartlabels',JSON.stringify(myLineChart.data.labels));
+    //     sessionStorage.setItem('chartdata',JSON.stringify(myLineChart.data.datasets[0].data));    
+    // }
 }
 
 //  Function that returns randon number and answer to ask ()
