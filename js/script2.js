@@ -79,8 +79,7 @@ function addData(chart, label, data) {
 // ------------------------------------------------------------------------------------------------------------
 function ask(event) {
     event.preventDefault();
-     
-
+    console.log('ask1');
     // Hide the question form and the Ask button 
     const formobj  = document.getElementById('theform');
     if (formobj[0].value) {
@@ -143,7 +142,6 @@ function ask(event) {
 
 // RESET BUTTON ---------------------------------------------------------------
 function reset(event) {
-    debugger;
     event.preventDefault();
     console.log('reset1');
     const formobj  = document.getElementById('theform');
