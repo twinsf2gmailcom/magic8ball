@@ -1,5 +1,6 @@
 :root {
-    --body_font1: 40px;
+    --body_font1: 50px;
+    --magic8_font1: 120px;
     --body_font1_color: rgb(255,255,255);
     --body_font2_color: rgb(238, 234, 22);
     --main_bg: rgb(0,0,0);
@@ -21,24 +22,61 @@ html, body {
     scroll-behavior: smooth;
   }
 
+  /* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+.glow {
+    font-size: var(--body_font1);
+    color: var(--body_font1_color);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  /* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+  .glow2 {
+    font-size: var(--body_font1);
+    color: var(--body_font1_color);
+    text-align: center;
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow2 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px hsl(64, 100%, 50%), 0 0 40px  hsl(64, 100%, 50%), 0 0 50px hsl(64, 100%, 50%), 0 0 60px hsl(64, 100%, 50%), 0 0 70px  hsl(64, 100%, 50%);
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px  hsl(86, 80%, 50%), 0 0 40px hsl(86, 80%, 50%), 0 0 50px hsl(86, 80%, 50%), 0 0 60px hsl(86, 80%, 50%), 0 0 70pxhsl(86, 80%, 50%), 0 0 80px hsl(86, 80%, 50%);
+    }
+  }
+
 form, label, .submit {
     font-size: var(--body_font1);
     color: var(--body_font1_color);
-}
-form {
-    width: 80vw;
+    margin: 5px;
 }
 
-.pformat {
+form {
+    width: 70vw;
+}
+
+/* .pformat {
     font-size: var(--body_font1);
     color: var(--body_font1_color);
-}
+} */
 
-.pformat2 {
+/* .pformat2 {
     font-size: var(--body_font1);
     color: var(--body_font2_color);
-}
-
+} */
 
 .submit {
     background-color: var(--main_bg);
@@ -49,11 +87,39 @@ form {
 }
 
 .question {
-    size: 50;
-
+    size: 20;
 }
 
 .answer {
 
 }
 
+/* ------------------------------------------- */
+/* Container holding the image and the text */
+.img8 {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 600px;
+  }
+
+  /* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--magic8_font1);
+  }
+
+/* ------------------------------------------- */
+/* Chart  */
+  .chart-container {
+    position: relative; 
+    height: 20vh; 
+    width: 60vw;
+}
+
+.myChart {
+    display: block;    
+}
