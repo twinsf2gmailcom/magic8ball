@@ -12,18 +12,18 @@ Chart.defaults.global.defaultFontSize = 16;
 
 let data = {
     borderColor : "#fffff",
-    labels: null,
+    labels: "",
     datasets: [{
         label: 'Random integer',
         data: null,
         backgroundColor: "rgb(0,0,255)",
         borderColor: "rgb(0,0,255)",
+        fill: false
     }]
   };
 
 let  options = {
     responsive: true,
-    fill: false,
     tooltips: {
         mode: 'index',
         intersect: true
@@ -32,19 +32,26 @@ let  options = {
         xAxes: [{
             display: true,
             ticks: {
+                beginAtZero: true,
                 min: 0,
-                stepSize : 1,
-                fontColor : "#fff",
-                fontSize : 14,            
-                display: true
-            }
+                stepSize : 1,        
+                display: true,
+                autoSkip: false,
+            },
+            scaleLabel: {
+                display: true,
+                labelString: 'Sequential Number',
+            },
         }],
         yAxes: [{
+            suggestedMin: 0,
+            suggestedMax: 19,   
             stepSize : 1,
-            fontColor : "#fff",
             display: true,
-            min: 0,
-            max: 19
+            scaleLabel: {
+                display: true,
+                labelString: 'Random Number'
+            }            
         }],
     },   
     title: {
@@ -52,7 +59,15 @@ let  options = {
         display: true,
         text: 'Random Number Generated for Answer',
         position: 'top'
-      }  
+      }, 
+      layout: {
+        padding: {
+            left: 20,
+            right: 20,
+            top: 20,
+            bottom: 20
+        }
+    }      
 };
 
 // Intialize the chart function--------------------
@@ -67,11 +82,13 @@ function init() {
 
 // The add data function--------------------------
 function addData(chart, label, data) {
-    chart.data.labels.push(label);
+    chart.data.labels.push(label+"");
+    //console.log(chart.data.labels)
     chart.data.datasets.forEach((dataset) => {
         dataset.data.push(data);
     });
     chart.update();
+    //console.log(chart);
 }
 
 // ------------------------------------------------------------------------------------------------------------
@@ -79,7 +96,7 @@ function addData(chart, label, data) {
 // ------------------------------------------------------------------------------------------------------------
 function ask(event) {
     event.preventDefault();
-    console.log('ask1');
+    //console.log('ask1');
     // Hide the question form and the Ask button 
     const formobj  = document.getElementById('theform');
     if (formobj[0].value) {
@@ -93,6 +110,7 @@ function ask(event) {
         // Make it glow.
         const questdiv  = document.getElementById('questdiv');
         questdiv.classList.remove('hidden');
+        questdiv.innerHTML = '';
         const p = document.createElement('p');
         questdiv.appendChild(p);
         p.innerHTML = formobj[0].value;
@@ -112,6 +130,8 @@ function ask(event) {
         // Make the reset buton visible
         const formobj2  = document.getElementById('theform2');
         formobj2.classList.remove('hidden');
+        const formobj3  = document.getElementById('theform3');
+        formobj3.classList.remove('hidden');
     
         // Get the data from the session storage, add it to the myLineChart data and update
         //graph.  If there is no data in storage the initialize the graph
@@ -140,33 +160,31 @@ function ask(event) {
     
 }  
 
-// RESET BUTTON ---------------------------------------------------------------
-function reset(event) {
+// RESET FORM/PAGE BUTTON ---------------------------------------------------------------
+function resetpg(event) {
     event.preventDefault();
-    console.log('reset1');
+    //console.log('reset1');
     const formobj  = document.getElementById('theform');
     formobj.classList.remove('hidden'); 
+    formobj[0].value = '';
     const formobj2  = document.getElementById('theform2');
     formobj2.classList.add('hidden');
+    const formobj3  = document.getElementById('theform3');
+    formobj3.classList.add('hidden');
     const questdiv  = document.getElementById('questdiv');
     questdiv.classList.add('hidden');
+   //console.log('reset2');
+}
 
-    console.log('reset2');
-
-    // Get the data from the session storage, add it to the myLineChart data and update
-    //graph.  If there is no data in storage the initialize the graph
-    // let Glabel = sessionStorage.getItem('chartlabels');
-    // let Gdata  = sessionStorage.getItem('chartdata');
-    // console.log('Reset');
-    // if (Gdata) {
-    //     init();
-    //     myLineChart.data.labels = JSON.parse(Glabel);
-    //     myLineChart.data.datasets[0].data = JSON.parse(Gdata);
-    // } else {
-    //     init();
-    //     sessionStorage.setItem('chartlabels',JSON.stringify(myLineChart.data.labels));
-    //     sessionStorage.setItem('chartdata',JSON.stringify(myLineChart.data.datasets[0].data));    
-    // }
+// RESET GRAPH BUTTON ---------------------------------------------------------------
+function resetgrp(event) {
+    event.preventDefault();
+    data.labels = null;
+    data.datasets[0].data = null;
+    init();
+    sessionStorage.setItem('chartlabels',JSON.stringify(myLineChart.data.labels));
+    sessionStorage.setItem('chartdata',JSON.stringify(myLineChart.data.datasets[0].data));
+    myLineChart.update();
 }
 
 //  Function that returns randon number and answer to ask ()

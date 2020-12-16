@@ -45,16 +45,22 @@
                 </div>
             </div>
         </div>
-        <div class="row d-flex align-items-center justify-content-center">
+        <div class="row d-flex align-items-center justify-content-center mb-4">
             <!-- FORM to ask a question will disappear when the ask button is pressed -->
-            <div class="formdiv2 col-sm d-flex align-items-center justify-content-center">
-                <form id="theform2" class="hidden" onsubmit="reset(event);">
+            <div class="formdiv2 col-sm-6 d-flex align-items-center justify-content-center">
+                <form id="theform2" class="hidden" onsubmit="resetpg(event);">
                     <input class="submit" type="submit" value="Reset Page">
                 </form>
             </div> 
-        </div>        
+            <div class="formdiv3 col-sm-6 d-flex align-items-center justify-content-center">
+                <form id="theform3" class="hidden" onsubmit="resetgrp(event);">
+                    <input class="submit" type="submit" value="Reset Graph">
+                </form>
+            </div>             
+        </div>
+
     </div>
-    <div class="container">
+    <div class="container mt-4">
         <div class="chart-container">
             <canvas id="myChart"></canvas>
         </div>
