@@ -7,11 +7,11 @@ var chartType = 'line';
 var myLineChart;
 
 // Global Options:
-Chart.defaults.global.defaultFontColor = 'black';
+Chart.defaults.global.defaultFontColor = '#ccc';
 Chart.defaults.global.defaultFontSize = 16;
 
 let data = {
-    borderColor : "#fffff",
+    borderColor : "#000",
     labels: "",
     datasets: [{
         label: 'Random integer',
@@ -31,6 +31,10 @@ let  options = {
     scales: {
         xAxes: [{
             display: true,
+            gridLines: {
+                display: false,
+                color: "#ccc"
+              },      
             ticks: {
                 beginAtZero: true,
                 min: 0,
@@ -48,6 +52,10 @@ let  options = {
             suggestedMax: 19,   
             stepSize : 1,
             display: true,
+            gridLines: {
+                display: true,
+                color: "#ccc"
+              },              
             scaleLabel: {
                 display: true,
                 labelString: 'Random Number'

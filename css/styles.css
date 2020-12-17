@@ -118,7 +118,7 @@ form {
 /* Chart  */
   .chart-container {
     position: relative; 
-    background: #fff;
+    background: #000;
 }
 
 .myChart {
