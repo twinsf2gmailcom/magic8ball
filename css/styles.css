@@ -4,6 +4,8 @@
     --body_font1_color: rgb(255,255,255);
     --body_font2_color: rgb(238, 234, 22);
     --main_bg: rgb(0,0,0);
+    --button_font1: 20px;    
+    --button_font1_color: #ccc;
 }
    
 @font-face {
@@ -58,10 +60,16 @@ html, body {
     }
   }
 
-form, label, .submit {
+form, label, .sumbitlrg {
     font-size: var(--body_font1);
     color: var(--body_font1_color);
     margin: 5px;
+}
+
+.submitsm {
+  font-size: var(--button_font1);
+  color: var(--button_font1_color);
+  margin: 5px;
 }
 
 form {

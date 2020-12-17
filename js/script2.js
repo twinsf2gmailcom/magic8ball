@@ -16,9 +16,10 @@ let data = {
     datasets: [{
         label: 'Random integer',
         data: null,
-        backgroundColor: "rgb(0,0,255)",
-        borderColor: "rgb(0,0,255)",
-        fill: false
+        backgroundColor: "rgb(255,255,0)",
+        borderColor: "rgb(255,255,0)",
+        fill: false,
+        cubicInterpolationMode: 'monotone'
     }]
   };
 
@@ -27,12 +28,16 @@ let  options = {
     tooltips: {
         mode: 'index',
         intersect: true
-    },   
+    }, 
+    hover: {
+        mode: 'nearest',
+        intersect: true
+    },     
     scales: {
         xAxes: [{
             display: true,
             gridLines: {
-                display: false,
+                display: true,
                 color: "#ccc"
               },      
             ticks: {
@@ -121,7 +126,7 @@ function ask(event) {
         questdiv.innerHTML = '';
         const p = document.createElement('p');
         questdiv.appendChild(p);
-        p.innerHTML = formobj[0].value;
+        p.innerHTML = 'Your Question was: ' + formobj[0].value;
         p.classList.add('glow');
     
         // Find the div to put the random answer in (centered) and put the
